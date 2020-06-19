@@ -30,6 +30,11 @@
     sudo apt-get install vim -y
   fi
 
+  # code
+  if ! code --version >/dev/null 2>&1; then
+    sudo snap install --classic code
+  fi
+
   # oh-my-zsh
   if [ ! -d ~/.oh-my-zsh/ ]; then
     sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
