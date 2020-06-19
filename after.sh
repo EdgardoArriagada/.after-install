@@ -1,6 +1,6 @@
 #!/bin/bash
 
-  sudo apt-get update
+sudo apt-get update
 
   # tilda
   if ! tilda --version >/dev/null 2>&1; then
@@ -37,6 +37,10 @@
     sudo snap install --classic code
   fi
 
+  ####
+  # The following scripts may depend on previous ones
+  ####
+
   # oh-my-zsh
   if [ ! -d ~/.oh-my-zsh/ ]; then
     sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -49,4 +53,14 @@
     git clone git clone https://github.com/EdgardoArriagada/.zsh-spell-book ~/.zsh-spell-book
     echo "source ~/.zsh-spell-book/main.zsh" >> ~/.zshrc
   fi
+
+  # nvm
+  if [ ! -s "$NVM_DIR/nvm.sh" ]; then
+    export NVM_DIR="$HOME/.nvm" && (
+    git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR"
+    cd "$NVM_DIR"
+    git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
+    ) && \. "$NVM_DIR/nvm.sh"
+  fi
+
 
