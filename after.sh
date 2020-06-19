@@ -28,7 +28,7 @@
   fi
 
   # vim
-  if ! vim -version >/dev/null 2>&1; then
+  if ! vim --version >/dev/null 2>&1; then
     sudo apt-get install vim -y
   fi
 
