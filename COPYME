@@ -1,0 +1,13 @@
+# hit `ctrl + x` `ctrl + e` and paste the following, then save
+
+sudo apt-get update
+
+if ! git --version >/dev/null 2>&1; then
+  sudo apt-get install git -y
+fi
+
+if [ ! -d ~/.after-install ]; then
+  git clone https://github.com/EdgardoArriagada/.after-install ~/.after-install
+fi
+
+source ~/.after-install/main.sh
