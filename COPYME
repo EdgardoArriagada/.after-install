@@ -1,4 +1,4 @@
-# hit `ctrl + x` `ctrl + e` and paste the following, then save
+# hit `ctrl + x` `ctrl + e` in your terminal and paste the following
 
 sudo apt-get update
 
@@ -11,3 +11,5 @@ if [ ! -d ~/.after-install ]; then
 fi
 
 source ~/.after-install/main.sh
+
+# then save
