@@ -29,6 +29,11 @@ if ! vim --version >/dev/null 2>&1; then
   sudo apt-get install vim -y
 fi
 
+# tmux
+if ! tmux -V >/dev/null 2>&1; then
+  sudo apt-get install tmux -y
+fi
+
 # code
 if ! code --version >/dev/null 2>&1; then
   sudo snap install --classic code
