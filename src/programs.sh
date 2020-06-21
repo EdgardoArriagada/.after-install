@@ -1,47 +1,29 @@
-# tilda
-if ! tilda --version >/dev/null 2>&1; then
+! tilda --version >/dev/null 2>&1 && \
   sudo apt-get install tilda -y
-fi
 
-# xdotool
-if ! xdotool -version >/dev/null 2>&1; then
+! xdotool -version >/dev/null 2>&1 && \
   sudo apt-get install xdotool -y
-fi
 
-# xclip
-if ! xclip -version >/dev/null 2>&1; then
+! xclip -version >/dev/null 2>&1 && \
   sudo apt-get install xclip -y
-fi
 
-# git
-if ! git --version >/dev/null 2>&1; then
+! git --version >/dev/null 2>&1 && \
   sudo apt-get install git -y
-fi
 
-# zsh
-if ! zsh --version >/dev/null 2>&1; then
+! zsh --version >/dev/null 2>&1 && \
   sudo apt-get install zsh -y
-fi
 
-# vim
-if ! vim --version >/dev/null 2>&1; then
+! vim --version >/dev/null 2>&1 && \
   sudo apt-get install vim -y
-fi
 
-# tmux
-if ! tmux -V >/dev/null 2>&1; then
+! tmux -V >/dev/null 2>&1 && \
   sudo apt-get install tmux -y
-fi
 
-# flameshot
-if ! flameshot --version >/dev/null 2>&1; then
+! flameshot --version >/dev/null 2>&1 && \
   sudo apt-get install flameshot -y
-fi
 
-# code
-if ! code --version >/dev/null 2>&1; then
+! code --version >/dev/null 2>&1 && \
   sudo snap install --classic code
-fi
 
 ####
 # The following scripts may depend on previous ones
