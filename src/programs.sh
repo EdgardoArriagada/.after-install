@@ -33,6 +33,11 @@ if ! tmux -V >/dev/null 2>&1; then
   sudo apt-get install tmux -y
 fi
 
+# flameshot
+if ! flameshot --version >/dev/null 2>&1; then
+  sudo apt-get install flameshot -y
+fi
+
 # code
 if ! code --version >/dev/null 2>&1; then
   sudo snap install --classic code
