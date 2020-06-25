@@ -38,7 +38,7 @@ fi
 
 # zsh-spell-book
 if [ ! -d ~/.zsh-spell-book ]; then
-  git clone git clone https://github.com/EdgardoArriagada/.zsh-spell-book ~/.zsh-spell-book
+  git clone https://github.com/EdgardoArriagada/.zsh-spell-book ~/.zsh-spell-book
   echo "source ~/.zsh-spell-book/main.zsh" >> ~/.zshrc
 fi
 
