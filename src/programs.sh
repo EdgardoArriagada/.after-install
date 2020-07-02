@@ -25,6 +25,9 @@
 ! code --version >/dev/null 2>&1 && \
   sudo snap install --classic code
 
+[ ! -d ~/snap/postman ] && \
+  sudo snap install postman
+
 ####
 # The following scripts may depend on previous ones
 ####
