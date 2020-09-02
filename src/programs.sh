@@ -22,6 +22,9 @@
 ! flameshot --version >/dev/null 2>&1 && \
   sudo apt-get install flameshot -y
 
+! heroku -v >/dev/null 2>&1 && \
+  curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+
 ! code --version >/dev/null 2>&1 && \
   sudo snap install --classic code
 
@@ -52,4 +55,11 @@ if [ ! -s "$NVM_DIR/nvm.sh" ]; then
   cd "$NVM_DIR"
   git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
   ) && \. "$NVM_DIR/nvm.sh"
+fi
+
+# rbenv
+if [ ! -d ~./rbenv ]; then
+  git clone https://github.com/rbenv/rbenv.git ~/.rbenv && \
+    $(cd ~/.rbenv && src/configure && make -C src)
+  # https://github.com/rbenv/ruby-build#readme
 fi
