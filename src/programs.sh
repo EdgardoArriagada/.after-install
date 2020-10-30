@@ -19,9 +19,6 @@
 ! tmux -V >/dev/null 2>&1 && \
   sudo apt-get install tmux -y
 
-! flameshot --version >/dev/null 2>&1 && \
-  sudo apt-get install flameshot -y
-
 ! heroku -v >/dev/null 2>&1 && \
   curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
