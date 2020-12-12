@@ -1,5 +1,5 @@
-! tilda --version >/dev/null 2>&1 && \
-  sudo apt-get install tilda -y
+! sxhkd -version >/dev/null 2>&1 && \
+  sudo apt-get install gawk sxhkd -y
 
 ! xdotool -version >/dev/null 2>&1 && \
   sudo apt-get install xdotool -y
