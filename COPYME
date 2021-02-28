@@ -1,10 +1,7 @@
 # hit `ctrl + x` `ctrl + e` in your terminal and paste the following
 
-sudo apt-get update
-
-if ! git --version >/dev/null 2>&1; then
-  sudo apt-get install git -y
-fi
+sudo apt update
+sudo apt install -y git
 
 if [ ! -d ~/.after-install ]; then
   git clone https://github.com/EdgardoArriagada/.after-install ~/.after-install
