@@ -5,7 +5,8 @@ sudo apt install -y \
   git \
   zsh \
   vim \
-  tmux
+  tmux \
+  bat
 
 ! code --version >/dev/null 2>&1 && \
   sudo snap install --classic code
