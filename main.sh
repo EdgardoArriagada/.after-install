@@ -55,4 +55,7 @@ if [ -f ~/.zshrc ]; then
   sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc
   sed -i 's/plugins=(git)//g' ~/.zshrc
   echo "source ~/.zsh-spell-book/main.zsh" >> ~/.zshrc
+  # syntax highlighting
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+  echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 fi
