@@ -29,11 +29,6 @@ if [ ! -d ~/.oh-my-zsh/ ]; then
   # use `chsh -s $(which zsh)` to try again
 fi
 
-# zsh-spell-book
-if [ ! -d ~/.zsh-spell-book ]; then
-  git clone https://github.com/EdgardoArriagada/.zsh-spell-book ~/.zsh-spell-book
-fi
-
 # nvm
 if [ ! -s "$NVM_DIR/nvm.sh" ]; then
   export NVM_DIR="$HOME/.nvm" && (
@@ -52,10 +47,19 @@ fi
 
 ## zsh configuration
 if [ -f ~/.zshrc ]; then
+  # oh my zsh
   sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc
   sed -i 's/plugins=(git)//g' ~/.zshrc
+
+  # zsh-spell-book
+  git clone https://github.com/EdgardoArriagada/.zsh-spell-book ~/.zsh-spell-book
   echo "source ~/.zsh-spell-book/main.zsh" >> ~/.zshrc
+
   # syntax highlighting
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-  echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
+  echo "source ~/.zsh/zsh-autosuggestions/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+
+  # autosuggestions
+  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+  echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
 fi
