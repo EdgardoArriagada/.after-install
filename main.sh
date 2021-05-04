@@ -6,6 +6,7 @@ sudo apt install -y \
   zsh \
   vim \
   tmux \
+  python3-pip \
   bat
 
 ! code --version >/dev/null 2>&1 && \
