@@ -15,12 +15,14 @@ sudo apt install -y \
 [ ! -d ~/snap/postman ] && \
   sudo snap install postman
 
+if [ ! -d ~/sent ]; then
+  sudo apt install -y farbfeld libxft2-dev
+  git clone https://git.suckless.org/sent ~/sent
+  (cd ~/sent && make && sudo mv sent /usr/local/bin)
+fi
+
 #! heroku -v >/dev/null 2>&1 && \
 #  curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
-
-####
-# The following scripts may depend on previous ones
-####
 
 # oh-my-zsh
 if [ ! -d ~/.oh-my-zsh/ ]; then
