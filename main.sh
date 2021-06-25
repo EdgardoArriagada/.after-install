@@ -7,6 +7,8 @@ sudo apt install -y \
   vim \
   tmux \
   python3-pip \
+  rofi \
+  stow \
   bat
 
 ! code --version >/dev/null 2>&1 && \
