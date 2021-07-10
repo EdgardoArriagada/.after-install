@@ -58,7 +58,7 @@ if [ -f ~/.zshrc ]; then
 
   # syntax highlighting
   git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
-  echo "source ~/.zsh/zsh-autosuggestions/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+  echo "source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 
   # autosuggestions
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
