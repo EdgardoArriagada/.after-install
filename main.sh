@@ -8,6 +8,7 @@ sudo apt install -y \
   tmux \
   python3-pip \
   rofi \
+  htop \
   stow \
   bat
 
