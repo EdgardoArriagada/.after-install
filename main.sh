@@ -5,6 +5,7 @@ sudo apt install -y \
   git \
   zsh \
   vim \
+  tree \
   tmux \
   python3-pip \
   rofi \
