@@ -10,11 +10,25 @@ sudo apt install -y \
   python3-pip \
   rofi \
   htop \
+  curl \
   stow \
+  sxhkd \
   bat
 
 ! code --version >/dev/null 2>&1 && \
   sudo snap install --classic code
+
+if ! nvim --version >/dev/null 2>&1; then
+  sudo snap install nvim --classic
+  sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+fi
+
+if [ ! -d ~/tdrop ]; then
+  sudo apt install -y gawk
+  git clone https://github.com/noctuid/tdrop ~/tdrop
+  (cd ~/tdrop && sudo make install)
+fi
 
 [ ! -d ~/snap/postman ] && \
   sudo snap install postman
