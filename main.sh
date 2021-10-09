@@ -16,8 +16,9 @@ sudo apt install -y \
   tig \
   bat
 
-! code --version >/dev/null 2>&1 && \
-  sudo snap install --classic code
+snap list code || sudo snap install --classic code
+snap list postman || sudo snap install postman
+snap list btop || sudo snap install btop
 
 if ! nvim --version >/dev/null 2>&1; then
   sudo snap install nvim --classic
@@ -31,8 +32,6 @@ if [ ! -d ~/tdrop ]; then
   (cd ~/tdrop && sudo make install)
 fi
 
-[ ! -d ~/snap/postman ] && \
-  sudo snap install postman
 
 if [ ! -d ~/sent ]; then
   sudo apt install -y farbfeld libxft2-dev
