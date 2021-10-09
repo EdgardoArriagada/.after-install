@@ -13,6 +13,7 @@ sudo apt install -y \
   curl \
   stow \
   sxhkd \
+  tig \
   bat
 
 ! code --version >/dev/null 2>&1 && \
