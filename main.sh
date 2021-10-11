@@ -16,9 +16,9 @@ sudo apt install -y \
   tig \
   bat
 
-snap list code || sudo snap install --classic code
-snap list postman || sudo snap install postman
-snap list btop || sudo snap install btop
+sudo snap install --classic code
+sudo snap install postman
+sudo snap install btop
 
 if ! nvim --version >/dev/null 2>&1; then
   sudo snap install nvim --classic
@@ -32,6 +32,9 @@ if [ ! -d ~/tdrop ]; then
   (cd ~/tdrop && sudo make install)
 fi
 
+# Unimatrix
+pip install git+https://github.com/will8211/unimatrix.git && \
+  sudo mv .local/bin/unimatrix /usr/local/bin
 
 if [ ! -d ~/sent ]; then
   sudo apt install -y farbfeld libxft2-dev
