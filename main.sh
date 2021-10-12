@@ -34,7 +34,7 @@ fi
 
 # Unimatrix
 pip install git+https://github.com/will8211/unimatrix.git && \
-  sudo mv .local/bin/unimatrix /usr/local/bin
+  sudo mv ~/.local/bin/unimatrix /usr/local/bin
 
 if [ ! -d ~/sent ]; then
   sudo apt install -y farbfeld libxft2-dev
