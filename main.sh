@@ -15,7 +15,10 @@ sudo apt install -y \
   sxhkd \
   tig \
   bat \
-  bspwm polybar suckless-tools lxappearance picom nitrogen
+
+# Tiling window manager deps
+sudo apt install -y \
+  bspwm polybar suckless-tools lxappearance picom nitrogen dunst
 
 sudo snap install --classic code
 sudo snap install postman
