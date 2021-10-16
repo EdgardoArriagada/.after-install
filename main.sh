@@ -14,7 +14,8 @@ sudo apt install -y \
   stow \
   sxhkd \
   tig \
-  bat
+  bat \
+  bspwm polybar suckless-tools lxappearance picom nitrogen
 
 sudo snap install --classic code
 sudo snap install postman
