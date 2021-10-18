@@ -7,6 +7,7 @@ sudo apt install -y \
   vim \
   tree \
   tmux \
+  httpie \
   python3-pip \
   rofi \
   htop \
@@ -18,7 +19,7 @@ sudo apt install -y \
 
 # Tiling window manager deps
 sudo apt install -y \
-  bspwm polybar suckless-tools lxappearance picom nitrogen dunst
+  bspwm polybar suckless-tools lxappearance picom xwallpaper dunst
 
 sudo snap install --classic code
 sudo snap install postman
