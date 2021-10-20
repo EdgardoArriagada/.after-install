@@ -19,7 +19,7 @@ sudo apt install -y \
 
 # Tiling window manager deps
 sudo apt install -y \
-  bspwm polybar suckless-tools lxappearance picom xwallpaper dunst
+  bspwm polybar suckless-tools lxappearance picom xwallpaper dunst sxiv
 
 sudo snap install --classic code
 sudo snap install postman
