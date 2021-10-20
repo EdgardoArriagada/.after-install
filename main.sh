@@ -16,6 +16,7 @@ sudo apt install -y \
   sxhkd \
   tig \
   bat \
+  shutter
 
 # Tiling window manager deps
 sudo apt install -y \
