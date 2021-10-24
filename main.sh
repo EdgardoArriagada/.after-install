@@ -93,3 +93,7 @@ if [ -f ~/.zshrc ]; then
   git clone https://github.com/EdgardoArriagada/.zsh-spell-book ~/.zsh-spell-book
   echo "source ~/.zsh-spell-book/main.zsh" >> ~/.zshrc
 fi
+
+## git diff-highlighting (required for tig)
+sudo cp /usr/share/doc/git/contrib/diff-highlight/diff-highlight /usr/local/bin/
+(cd /usr/local/bin && sudo chmod +x diff-highlight)
