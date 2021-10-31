@@ -17,6 +17,7 @@ sudo apt install -y \
   tig \
   bat \
   ripgrep \
+  neofetch \
   shutter
 
 # Tiling window manager deps
