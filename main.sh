@@ -1,4 +1,5 @@
 sudo apt install -y \
+  build-essential \
   pinentry-tty \
   xdotool \
   xclip \
@@ -18,11 +19,13 @@ sudo apt install -y \
   bat \
   ripgrep \
   neofetch \
-  shutter
+  shutter \
+  fd-find \
+  sxiv
 
 # Tiling window manager deps
 sudo apt install -y \
-  bspwm polybar suckless-tools lxappearance picom xwallpaper dunst sxiv redshift \
+  bspwm polybar suckless-tools lxappearance picom xwallpaper dunst redshift \
   blueman
 
 sudo snap install --classic code
