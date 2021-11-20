@@ -21,6 +21,7 @@ sudo apt install -y \
   neofetch \
   shutter \
   fd-find \
+  gh \
   sxiv
 
 # Tiling window manager deps
