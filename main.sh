@@ -4,6 +4,7 @@ sudo apt install -y \
   xdotool \
   xclip \
   git \
+  tldr \
   zsh \
   vim \
   tree \
