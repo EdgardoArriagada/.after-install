@@ -21,7 +21,6 @@ sudo apt install -y \
   neofetch \
   shutter \
   fd-find \
-  gh \
   sxiv
 
 # Tiling window manager deps
@@ -32,6 +31,7 @@ sudo apt install -y \
 sudo snap install --classic code
 sudo snap install postman
 sudo snap install btop
+sudo snap install gh
 
 if ! nvim --version >/dev/null 2>&1; then
   sudo snap install nvim --classic
