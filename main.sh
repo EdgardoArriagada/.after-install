@@ -60,11 +60,17 @@ fi
 
 # oh-my-zsh
 if [ ! -d ~/.oh-my-zsh/ ]; then
-  sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  sudo apt-get install fonts-powerline
   # if you fail password at setting zsh as default shell,
   # use `chsh -s $(which zsh)` to try again
+  sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 fi
+
+# fonts
+sudo apt-get install fonts-powerline
+# font copied from:
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
+sudo cp ~/.after-install/DroidSansMonoForPowerlinePlusNerdFileTypesMono.otf /usr/share/fonts/
 
 # nvm
 if [ ! -s "$NVM_DIR/nvm.sh" ]; then
