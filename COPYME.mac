@@ -1,0 +1,13 @@
+# hit `ctrl + x` `ctrl + e` in your terminal and paste the following
+# install brew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install git
+
+if [ ! -d ~/.after-install ]; then
+  git clone https://github.com/EdgardoArriagada/.after-install ~/.after-install
+fi
+
+source ~/.after-install/main.mac.sh
+
+# then save
