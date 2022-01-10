@@ -95,6 +95,10 @@ if [ -f ~/.zshrc ]; then
   sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc
   sed -i 's/plugins=(git)//g' ~/.zshrc
 
+  # fzf-tab
+  git clone https://github.com/Aloxaf/fzf-tab
+  echo "source ~/fzf-tab/fzf-tab.plugin.zsh" >> ~/.zshrc
+
   # syntax highlighting
   git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
   echo "source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
