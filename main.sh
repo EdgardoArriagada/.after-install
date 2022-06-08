@@ -59,14 +59,6 @@ fi
 #! heroku -v >/dev/null 2>&1 && \
 #  curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
-# oh-my-zsh
-if [ ! -d ~/.oh-my-zsh/ ]; then
-  # if you fail password at setting zsh as default shell,
-  # use `chsh -s $(which zsh)` to try again
-  sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-fi
-
 # fonts
 sudo apt-get install fonts-powerline
 # font copied from:
@@ -91,10 +83,6 @@ fi
 
 ## zsh configuration
 if [ -f ~/.zshrc ]; then
-  # oh my zsh
-  sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc
-  sed -i 's/plugins=(git)//g' ~/.zshrc
-
   # fzf-tab
   git clone https://github.com/Aloxaf/fzf-tab
   echo "source ~/fzf-tab/fzf-tab.plugin.zsh" >> ~/.zshrc

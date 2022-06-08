@@ -19,23 +19,16 @@ brew install \
   coreutils \
   fzf \
   btop \
+  starship \
+  font-caskaydia-cove-nerd-font \
   neofetch
 
 # Unimatrix
 pip install git+https://github.com/will8211/unimatrix.git && \
   sudo mv ~/Library/Python/3.8/bin/unimatrix /usr/local/bin
 
-# oh-my-zsh
-if [ ! -d ~/.oh-my-zsh ]; then
-  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi
-
 ## zsh configuration
 if [ -f ~/.zshrc ]; then
-  # oh my zsh
-  sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc
-  sed -i 's/plugins=(git)//g' ~/.zshrc
-
   # fzf-tab
   git clone https://github.com/Aloxaf/fzf-tab
   echo "source ~/fzf-tab/fzf-tab.plugin.zsh" >> ~/.zshrc
