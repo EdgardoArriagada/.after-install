@@ -19,7 +19,6 @@ brew install \
   coreutils \
   fzf \
   btop \
-  starship \
   font-caskaydia-cove-nerd-font \
   neofetch
 
