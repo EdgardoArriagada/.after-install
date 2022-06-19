@@ -11,6 +11,11 @@ if [ -f ~/.zshrc ]; then
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
   echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
 
+  # alient prompt
+  git clone https://github.com/eendroroy/alien.git
+  cd alien
+  git submodule update --init --recursive
+
   # zsh-spell-book
   git clone https://github.com/EdgardoArriagada/.zsh-spell-book ~/.zsh-spell-book
   echo "source ~/.zsh-spell-book/main.zsh" >> ~/.zshrc
