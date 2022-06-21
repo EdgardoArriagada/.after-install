@@ -1,3 +1,6 @@
+# fnm
+curl -fsSL https://fnm.vercel.app/install | bash
+
 if [ -f ~/.zshrc ]; then
   # fzf-tab
   git clone https://github.com/Aloxaf/fzf-tab
