@@ -65,15 +65,6 @@ sudo apt-get install fonts-powerline
 # https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 sudo cp ~/.after-install/DroidSansMonoForPowerlinePlusNerdFileTypesMono.otf /usr/share/fonts/
 
-# nvm
-if [ ! -s "$NVM_DIR/nvm.sh" ]; then
-  export NVM_DIR="$HOME/.nvm" && (
-  git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR"
-  cd "$NVM_DIR"
-  git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
-  ) && \. "$NVM_DIR/nvm.sh"
-fi
-
 # rbenv
 if [ ! -d ~./rbenv ]; then
   git clone https://github.com/rbenv/rbenv.git ~/.rbenv && \
