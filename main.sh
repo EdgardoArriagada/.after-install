@@ -1,4 +1,5 @@
 sudo apt install -y \
+  lsd \
   build-essential \
   pinentry-tty \
   xdotool \
@@ -36,8 +37,6 @@ sudo snap install gh
 
 if ! nvim --version >/dev/null 2>&1; then
   sudo snap install nvim --classic
-  sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 fi
 
 if [ ! -d ~/tdrop ]; then
