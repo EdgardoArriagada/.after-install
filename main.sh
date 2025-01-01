@@ -65,7 +65,7 @@ sudo apt-get install fonts-powerline
 sudo cp ~/.after-install/DroidSansMonoForPowerlinePlusNerdFileTypesMono.otf /usr/share/fonts/
 
 # rbenv
-if [ ! -d ~./rbenv ]; then
+if [ ! -d ~/.rbenv ]; then
   git clone https://github.com/rbenv/rbenv.git ~/.rbenv && \
     $(cd ~/.rbenv && src/configure && make -C src)
   # https://github.com/rbenv/ruby-build#readme

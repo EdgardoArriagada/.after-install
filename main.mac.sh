@@ -1,4 +1,4 @@
-brew install --cask iterm2 font-hack-nerd-font
+brew install --cask ghostty font-hack-nerd-font
 
 brew install \
   lsd \
@@ -20,7 +20,7 @@ brew install \
   fzf \
   btop \
   font-caskaydia-cove-nerd-font \
-  neofetch
+  smug
 
 # Unimatrix
 pip install git+https://github.com/will8211/unimatrix.git && \
