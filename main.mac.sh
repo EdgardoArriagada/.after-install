@@ -1,8 +1,10 @@
 brew install --cask ghostty font-hack-nerd-font
 
 brew install \
+  stylua \
   lsd \
   tmux \
+  hammerspoon \
   bat \
   tig \
   neovim \
@@ -11,7 +13,7 @@ brew install \
   nvm \
   gnupg2 \
   gh \
-  pinentry-mac\ \
+  pinentry-mac \
   fd \
   tldr \
   git-delta \

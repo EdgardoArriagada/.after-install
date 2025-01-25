@@ -21,7 +21,7 @@ if [ -f ~/.zshrc ]; then
 
   # zsh-spell-book
   git clone https://github.com/EdgardoArriagada/.zsh-spell-book ~/.zsh-spell-book
-  echo "source ~/.zsh-spell-book/main.zsh" >> ~/.zshrc
+  echo "source ~/.zsh-spell-book/development.zsh" >> ~/.zshrc
 fi
 
 ## git diff-highlighting (required for tig)
@@ -29,3 +29,5 @@ git clone https://github.com/git/git/tree/master/contrib/diff-highlight
 (cd ~/git/contrib/diff-highlight && \
   make diff-highlight && \
   sudo mv diff-highlight /usr/local/bin)
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
