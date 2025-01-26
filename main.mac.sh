@@ -22,7 +22,10 @@ brew install \
   fzf \
   btop \
   font-caskaydia-cove-nerd-font \
-  smug
+  smug \
+  koekeishiya/formulae/skhd
+
+skhd --start-service
 
 # Unimatrix
 pip install git+https://github.com/will8211/unimatrix.git && \
