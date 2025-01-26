@@ -23,7 +23,8 @@ brew install \
   btop \
   font-caskaydia-cove-nerd-font \
   smug \
-  koekeishiya/formulae/skhd
+  koekeishiya/formulae/skhd \
+  choose-gui
 
 skhd --start-service
 
