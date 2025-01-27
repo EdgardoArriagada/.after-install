@@ -1,4 +1,4 @@
-brew install --cask ghostty font-hack-nerd-font
+brew install --cask ghostty font-hack-nerd-font flameshot
 
 brew install \
   stow \
