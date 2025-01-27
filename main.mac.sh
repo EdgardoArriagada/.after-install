@@ -1,6 +1,8 @@
 brew install --cask ghostty font-hack-nerd-font
 
 brew install \
+  stow \
+  gopls \
   stylua \
   lsd \
   tmux \
