@@ -2,6 +2,7 @@ brew install --cask ghostty font-hack-nerd-font flameshot postman
 
 brew install \
   stow \
+  prettierd \
   gopls \
   stylua \
   lsd \
