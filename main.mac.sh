@@ -1,6 +1,7 @@
 brew install --cask ghostty font-hack-nerd-font flameshot postman
 
 brew install \
+  colima \
   stow \
   prettierd \
   gopls \
