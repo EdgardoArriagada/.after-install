@@ -2,6 +2,7 @@ brew install --cask ghostty font-hack-nerd-font flameshot postman
 
 brew install \
   docker \
+  docker-compose \
   colima \
   stow \
   prettierd \
