@@ -25,7 +25,6 @@ brew install \
   fzf \
   btop \
   font-caskaydia-cove-nerd-font \
-  smug \
   koekeishiya/formulae/skhd \
   choose-gui
 
