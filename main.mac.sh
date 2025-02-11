@@ -6,7 +6,6 @@ cask_apps=(
 )
 
 brew_apps=(
-  asdf autoconf
   tmuxp
   docker docker-compose colima
   stow
