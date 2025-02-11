@@ -6,15 +6,11 @@ cask_apps=(
 )
 
 brew_apps=(
-  asdf
+  asdf autoconf
   tmuxp
-  docker
-  docker-compose
-  colima
+  docker docker-compose colima
   stow
-  prettierd
-  gopls
-  stylua
+  prettierd gopls stylua
   lsd
   tmux
   hammerspoon
