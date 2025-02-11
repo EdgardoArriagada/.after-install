@@ -1,6 +1,8 @@
 brew install --cask ghostty font-hack-nerd-font flameshot postman
 
 brew install \
+  asdf \
+  tmuxp \
   docker \
   docker-compose \
   colima \
