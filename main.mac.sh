@@ -12,6 +12,7 @@ brew_apps=(
   prettierd gopls stylua
   lsd
   tmux
+  entr
   hammerspoon
   bat
   tig
