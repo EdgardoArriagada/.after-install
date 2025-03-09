@@ -10,6 +10,7 @@ brew_apps=(
   docker docker-compose colima
   stow
   prettierd gopls stylua
+  flake8 black # Python (linter and formatter)
   lsd
   tmux
   entr
